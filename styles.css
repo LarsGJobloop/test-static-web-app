@@ -1,3 +1,5 @@
+/* User Stylesheet overrides */
+
 * {
   margin: 0px;
   padding: 0px;
@@ -8,6 +10,8 @@ a {
   color: inherit;
   text-decoration: inherit;
 }
+
+/* Utilities */
 
 .flex {
   display: flex;
@@ -34,6 +38,16 @@ a {
   top: 0px;
 }
 
+:root {
+  --spacing-base: 2px;
+}
+
+.p-sm {padding: calc(var(--spacing-base) * 1);}
+.p-md {padding: calc(var(--spacing-base) * 3);}
+.p-lg {padding: calc(var(--spacing-base) * 5);}
+
+/* Section specific */
+
 .section-hero {
   background-image: url("assets/fjords.webp");
   background-position: center;
@@ -53,4 +67,13 @@ a {
   background-image: url(assets/earth.jpg);
   background-position: center;
   background-size: cover;
+}
+
+/* Materials */
+
+.glass-smoked {
+  background: rgba( 119, 119, 119, 0.2 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 11.5px );
+  -webkit-backdrop-filter: blur( 11.5px );
 }
