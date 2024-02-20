@@ -16,3 +16,6 @@
 .justify-center {
   justify-content: center;
 }
+.sticky {
+  position: sticky;
+}

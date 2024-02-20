@@ -7,8 +7,24 @@
     <link rel="stylesheet" href="styles.css" />
     <script type="module" src="script.js"></script>
   </head>
+
+  <script>
+    const motds = [
+      "Happy Valentines",
+      "You missed Christmas",
+      "Testing is the best kind of double work!",
+    ]
+
+    const randomEntry = (arr) => arr[Math.floor(Math.random() * arr.length)]
+
+    document.querySelector("#motd").textContent = randomEntry(motds)
+  </script>
   <body>
-    <header>
+    <section>
+      <p>MOTD: <span id="motd"></span></p>
+    </section>
+
+    <header class="sticky">
       <a href="/">Logo Placeholder</a>
     </header>
     
