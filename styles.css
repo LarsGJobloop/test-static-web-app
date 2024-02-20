@@ -19,3 +19,24 @@
 .sticky {
   position: sticky;
 }
+
+.section-hero {
+  background-image: url("assets/fjords.webp");
+  background-position: center;
+  background-size: cover;
+}
+.section-about {
+  background-image: url(assets/max-kleinen-ohQinqTl_DE-unsplash.webp);
+  background-position: center;
+  background-size: cover;
+}
+.section-projects {
+  background-image: url(assets/moon-phases.webp);
+  background-position: center;
+  background-size: cover;
+}
+.section-contact {
+  background-image: url(assets/earth.jpg);
+  background-position: center;
+  background-size: cover;
+}

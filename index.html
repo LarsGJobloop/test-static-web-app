@@ -7,41 +7,40 @@
     <link rel="stylesheet" href="styles.css" />
     <script type="module" src="script.js"></script>
   </head>
-
-  <script>
-    const motds = [
-      "Happy Valentines",
-      "You missed Christmas",
-      "Testing is the best kind of double work!",
-    ]
-
-    const randomEntry = (arr) => arr[Math.floor(Math.random() * arr.length)]
-
-    document.querySelector("#motd").textContent = randomEntry(motds)
-  </script>
   <body>
     <section>
       <p>MOTD: <span id="motd"></span></p>
     </section>
+    <script>
+      const motds = [
+        "Happy Valentines",
+        "You missed Christmas",
+        "Testing is the best kind of double work!",
+      ]
+
+      const randomEntry = (arr) => arr[Math.floor(Math.random() * arr.length)]
+
+      document.querySelector("#motd").textContent = randomEntry(motds)
+    </script>
 
     <header class="sticky">
       <a href="/">Logo Placeholder</a>
     </header>
     
     <main class="grow">
-      <section class="flex flex-col justify-center min-h-screen">
+      <section class="flex flex-col justify-center min-h-screen section-hero">
         <h1 class="text-center">Static Web App Testing</h1>
       </section>
       
-      <section class="flex flex-col justify-center min-h-screen">
+      <section class="flex flex-col justify-center min-h-screen section-about">
         <h2 class="text-center">About</h2>
       </section>
 
-      <section class="flex flex-col justify-center min-h-screen">
+      <section class="flex flex-col justify-center min-h-screen section-projects">
         <h1 class="text-center">Projects</h1>
       </section>
 
-      <section class="flex flex-col justify-center min-h-screen">
+      <section class="flex flex-col justify-center min-h-screen section-contact">
         <h1 class="text-center">Contact</h1>
       </section>
     </main>
